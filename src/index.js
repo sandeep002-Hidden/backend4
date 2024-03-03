@@ -6,3 +6,9 @@ dotenv.config({
 })
 
 connectDb()
+.then((err)=>{
+    app.listen(process.env.PORT||5000)
+})
+.catch((err)=>{
+    console.log("Error occur While connection !!!"+err)
+})
