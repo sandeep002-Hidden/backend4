@@ -1,1 +1,1 @@
-export const dbName="Mongooes_Test"
+export const dbName="vidTubeBackend"

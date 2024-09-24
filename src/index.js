@@ -6,6 +6,7 @@ dotenv.config({
 })
 
 connectDb()
+
 .then((err)=>{
     app.listen(process.env.PORT||5000)
     console.log(`App is running  at Port ${process.env.PORT}`)
